@@ -3,6 +3,8 @@ import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
 import { Image } from "astro:assets";
 import albumCover from "../assets/cover_color.jpg";
+import instrumentsOnMat from "../assets/instruments_on_mat.jpeg";
+import allSmiling from "../assets/all_smiling.jpeg";
 ---
 
 <Layout>
@@ -49,6 +51,8 @@ import albumCover from "../assets/cover_color.jpg";
       </p>
       <p class="italic">Don Meade, Samsonville, NY</p>
     </div>
+
+    <Image src={allSmiling} alt="Dan & Christina and kids" height={400} />
 
     <div class="flex w-full flex-col gap-4">
       <h1>Notes</h1>
@@ -238,16 +242,19 @@ import albumCover from "../assets/cover_color.jpg";
       <ul>
         <li>
           Engineered and mixed by <a
-            href="https://www.instagram.com/paulgurneymusic/">Paul Gurney</a>
+            href="https://www.instagram.com/paulgurneymusic/">Paul Gurney</a
+          >
         </li>
         <li>
           Mastered by <a href="http://www.seanmacerlaine.com/"
-            >Seán Mac Erlaine</a>
+            >Seán Mac Erlaine</a
+          >
         </li>
         <li>Cover art by <a href="https://sineadok.com/">Sinéad Kennedy</a></li>
         <li>
           Photography by <a href="https://www.instagram.com/misterdolphin_/"
-            >Aengus Dolphin</a>
+            >Aengus Dolphin</a
+          >
         </li>
       </ul>
       <ul>

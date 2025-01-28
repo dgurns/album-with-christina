@@ -1,8 +1,53 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
+import { Image } from "astro:assets";
+import albumCover from "../assets/cover_color.jpg";
 ---
 
 <Layout>
-  Hello <div class="p-4 text-red-500">HELLO</div>
+  <div
+    class="align-start flex w-full flex-col items-center justify-start gap-4"
+  >
+    <!-- <iframe
+    style="border: 0; width: 328px; height: 448px;"
+    src="https://bandcamp.com/EmbeddedPlayer/album=1252453085/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+    seamless></iframe> -->
+
+    <Image
+      src={albumCover}
+      alt="Album Cover by Sinead Kennedy"
+      width={328}
+      quality={100}
+      class="my-8"
+    />
+
+    <div class="flex flex-col gap-4">
+      <p>
+        Dan Gurney learned his music in the Hudson Valley, just north of New
+        York City, from senior immigrant musicians, most notably the late
+        Roscommon flute player Mike McHale and east-Galway multi-instrumentalist
+        Fr. Charlie Coen. When he moved to Dublin a few years ago, Dan brought
+        with him a musical sensibility absorbed from those 1950's exiles,
+        playing his vintage button box in an older, more relaxed style than that
+        of many of Ireland's contemporary young traditional musicians.
+      </p>
+      <p>
+        It is a style that nonetheless meshes beautifully with the smoothly
+        flowing flute and whistle playing of his wife Christina Dolphin and with
+        Brian McGrath's tastefully understated piano accompaniment. Christina,
+        like many globe-trotting Irish musicians of her generation, spent a few
+        years abroad, including a residency in New Paltz, New York (with a gig
+        as a Broadway theater musician), before returning home to raise a
+        family.
+      </p>
+      <p>
+        Dan and Christina are fondly remembered in the Empire State, so even if
+        the streets of Dublin are a bit farther than a subway ride away, we
+        Yanks can only hope that the ties that bind them to New York will draw
+        them back for visits in years to come!
+      </p>
+      Don Meade, Samsonville, NY
+    </div>
+  </div>
 </Layout>

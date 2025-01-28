@@ -1,1 +1,13 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+
+h1 {
+  font-weight: 600;
+}
+
+a {
+  color: rgb(44, 96, 44);
+}
+
+a:hover {
+  text-decoration: underline;
+}

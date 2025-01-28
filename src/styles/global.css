@@ -6,8 +6,13 @@ h1 {
 
 a {
   color: rgb(44, 96, 44);
+  text-decoration-line: underline;
 }
 
-a:hover {
-  text-decoration: underline;
+a.underline-on-hover {
+  text-decoration-line: none;
+
+  &:hover {
+    text-decoration-line: underline;
+  }
 }

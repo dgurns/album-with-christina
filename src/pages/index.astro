@@ -21,6 +21,7 @@ import allSmiling from "../assets/all_smiling.jpeg";
       alt="Album Cover by Sinead Kennedy"
       width={328}
       quality={100}
+      class="rounded-lg shadow-xl"
     />
 
     <div class="flex flex-col gap-4">
@@ -52,7 +53,12 @@ import allSmiling from "../assets/all_smiling.jpeg";
       <p class="italic">Don Meade, Samsonville, NY</p>
     </div>
 
-    <Image src={allSmiling} alt="Dan & Christina and kids" height={400} />
+    <Image
+      src={allSmiling}
+      alt="Dan & Christina and kids"
+      layout="full-width"
+      quality={100}
+    />
 
     <div class="flex w-full flex-col gap-4">
       <h1>Notes</h1>
@@ -187,8 +193,8 @@ import allSmiling from "../assets/all_smiling.jpeg";
           The first reel comes from one of our all-time favorite albums, <a
             href="https://www.irishtune.info/album/BnkShn/"
             >The Banks of the Shannon</a
-          > by Seamus Connolly, Paddy O'Brien, and Charlie Lennon. The Flowing Bowl
-          was recorded by Irish-American band Solas in 1996 on their <a
+          >, by Seamus Connolly, Paddy O'Brien, and Charlie Lennon. The Flowing
+          Bowl was recorded by Irish-American band Solas in 1996 on their <a
             href="https://www.discogs.com/release/5499185-Solas-Solas"
             >self-titled debut album</a
           >. Tommy Gunn, the fiddle player from Fermanagh and Belfast, composed
@@ -270,5 +276,12 @@ import allSmiling from "../assets/all_smiling.jpeg";
         </li>
       </ul>
     </div>
+
+    <Image
+      src={instrumentsOnMat}
+      alt="Instruments on playmat"
+      layout="full-width"
+      quality={100}
+    />
   </div>
 </Layout>

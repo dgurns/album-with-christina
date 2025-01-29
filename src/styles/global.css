@@ -10,7 +10,7 @@ h2 {
 }
 
 a {
-  color: rgb(59, 148, 59);
+  color: #3b943b;
   text-decoration: none;
 
   &:hover {

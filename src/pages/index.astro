@@ -12,17 +12,19 @@ import allSmiling from "../assets/all_smiling.jpeg";
     class="align-start flex w-full flex-col items-center justify-start gap-8"
   >
     <!-- <iframe
-    style="border: 0; width: 328px; height: 448px;"
-    src="https://bandcamp.com/EmbeddedPlayer/album=1252453085/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
-    seamless></iframe> -->
+      style="border: 0; width: 328px; height: 448px;"
+      src="https://bandcamp.com/EmbeddedPlayer/album=1252453085/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
+      seamless></iframe> -->
 
-    <Image
-      src={albumCover}
-      alt="Album Cover by Sinead Kennedy"
-      width={328}
-      quality={100}
-      class="rounded-lg shadow-2xl"
-    />
+    <div class="my-12 w-8/9 sm:w-3/5">
+      <Image
+        src={albumCover}
+        alt="Album Cover by Sinead Kennedy"
+        layout="responsive"
+        quality={100}
+        class="rounded-lg shadow-2xl"
+      />
+    </div>
 
     <div class="flex flex-col gap-4">
       <h1>Introduction</h1>
@@ -78,8 +80,8 @@ import allSmiling from "../assets/all_smiling.jpeg";
           >, who sadly passed away at the end of 2024. He was Dan's main
           influence growing up and passed down a multitude of East Galway tunes
           like this. He often started performances with this tune. It was also
-          recorded on <em>Warming up</em> by Father Charlie's brother Jack along
-          with Seamus Connolly, Martin Mulhaire, and Felix Dolan - legends all!
+          recorded on Warming up by Father Charlie's brother Jack along with
+          Seamus Connolly, Martin Mulhaire, and Felix Dolan - legends all!
         </div>
       </p>
       <p>
